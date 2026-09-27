@@ -1,4 +1,14 @@
-# Quantum Coalition QSITE 2026 Challenge
+# QSITE 2026 computational track — Yahye Abdullahi's submission
+
+**[View my Python solution](./solution.py)** · **[Read how it works and run the benchmarks](./SOLUTION.md)**
+
+I implemented the computational track's qubit placement and SWAP routing algorithm in `solution.py`. It maps logical qubits onto a hardware graph, then inserts SWAPs while considering upcoming gates. The solution retains the challenge's `solve(program, hardware_graph)` interface.
+
+This repository is my fork of the [Quantum Coalition QSITE 2026 challenge](https://github.com/benmcdonough20/QSITE-2026-QuantumCoalition). The challenge handouts, starter kits, hardware model, benchmarks, and scorer belong to the organizers; my submission is `solution.py`, documented in `SOLUTION.md`. The scientific track is included from the original challenge and is not part of my submission.
+
+---
+
+## Original challenge README
 
 Welcome to the Quantum Coalition's QSITE 2026 hackathon challenge! There are two tracks available. The first track will have you thinking like a quantum computer scientist by solving a routing problem relevant to NISQ hardware. The second track will get you thinking like a physicist by exploring how a quantum computer could be used to probe phases of matter.
 
@@ -43,7 +53,7 @@ Each track includes its own `uv` project so you can recreate the environment loc
 conda install -c conda-forge uv
 
 # clone the repo
-git clone https://github.com/benmcdonough20/QSITE-2026-QuantumCoalition.git
+git clone https://github.com/yoruaaa7-cpu/QSITE-2026-QuantumCoalition.git
 
 # create the Computational Track environment (from root dir)
 uv sync --project "Computational Track"
